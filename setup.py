@@ -4,7 +4,7 @@ from setuptools import setup
 import io
 import os
 
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 
 
 def fpath(name):
@@ -37,6 +37,12 @@ setup_args = dict(
     version=VERSION,
     license='MIT',
     packages=find_packages(exclude=['tests']),
+    package_data={'askme': ['source/data/*.json']},
+    entry_points={
+        'console_scripts': [
+            'askme = askme.main:main',
+        ],
+    },
     include_package_data=True,
     install_requires=get_requirements(),
     author='Ryan Liao',
