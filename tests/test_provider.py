@@ -5,7 +5,7 @@ from askme.provider import Provider
 
 
 def generate_provider(options):
-    data_file = path.join(os.path.dirname(os.path.abspath(__file__)), '../source/data/aws.json')
+    data_file = path.join(os.path.dirname(os.path.abspath(__file__)), '../askme/source/data/aws.json')
     return Provider(data_file, options)
 
 

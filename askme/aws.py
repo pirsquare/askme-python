@@ -3,7 +3,7 @@ import os
 from os import path
 from .provider import Provider
 
-SOURCE_DIR = "../source/data/"
+SOURCE_DIR = "./source/data/"
 
 
 class AWS(Provider):
