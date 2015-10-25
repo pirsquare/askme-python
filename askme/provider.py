@@ -37,7 +37,7 @@ class Provider(object):
     def render(self, data):
         cells_length = self.generate_cells_length(data, self.fields)
         for row in data:
-            print self.generate_row_output(row, self.fields, cells_length)
+            print (self.generate_row_output(row, self.fields, cells_length))
 
     def generate_row_output(self, row, columns, cells_length):
         output = ""
